@@ -36,3 +36,69 @@ This project was implemented as part of an **AI Intern Assignment** to demonstra
 
 ## Project Structure
 
+document-qa-rag/
+│
+├── backend/
+│ ├── app/
+│ │ ├── main.py # FastAPI backend
+│ │ ├── config.py # Configurations (.env)
+│ │ ├── rag_pipeline.py # RAG pipeline (retrieval + LLM)
+│ │ ├── vector_store.py # FAISS vector store handling
+│ │ ├── document_loader.py # Load PDF, DOCX, TXT, MD
+│ │ └── schemas.py # Pydantic request/response schemas
+│ ├── data/
+│ │ ├── uploads/ # Uploaded documents
+│ │ └── faiss_index/ # FAISS vector database
+│ └── requirements.txt # Backend dependencies
+│
+├── frontend/
+│ └── streamlit_app.py # Streamlit frontend
+│
+└── README.md
+
+
+
+
+---
+
+## Technologies Used
+
+- **Backend**
+  - FastAPI: Lightweight backend API.
+  - FAISS: Local vector store for embeddings.
+  - LangChain: Document loaders, vector store utilities.
+  - OpenAI GPT-4o-mini: Language model for generating answers.
+- **Frontend**
+  - Streamlit: Simple, interactive UI for file upload and chat.
+- **Other**
+  - PyPDF, docx2txt: Extract text from PDFs and DOCX.
+  - python-dotenv: Load API keys securely from `.env`.
+
+---
+
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone <YOUR_REPO_URL>
+cd document-qa-rag/backend
+
+
+
+
+Why This Implementation?
+
+Uses RAG pipeline → ensures answers are grounded in the documents, avoiding hallucinations.
+
+FAISS local vector store → no external database required.
+
+Multi-format support → PDF, DOCX, TXT, Markdown.
+
+Clear architecture → backend/frontend separation, production-ready.
+
+Error handling & fallbacks → robust for real-world use.
+
+Citation tracing → recruiters see references for each answer.
+
+This demonstrates practical AI engineering skills, including document parsing, embedding generation, vector search, LLM prompting, and frontend integration.
