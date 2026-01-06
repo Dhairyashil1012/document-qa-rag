@@ -39,20 +39,33 @@ This project was implemented as part of an **AI Intern Assignment** to demonstra
 document-qa-rag/
 │
 ├── backend/
+│ │
 │ ├── app/
+| |
 │ │ ├── main.py # FastAPI backend
+│ │
 │ │ ├── config.py # Configurations (.env)
+│ │
 │ │ ├── rag_pipeline.py # RAG pipeline (retrieval + LLM)
+│ │
 │ │ ├── vector_store.py # FAISS vector store handling
+│ │
 │ │ ├── document_loader.py # Load PDF, DOCX, TXT, MD
+│ │
 │ │ └── schemas.py # Pydantic request/response schemas
+│ │
 │ ├── data/
+│ │
 │ │ ├── uploads/ # Uploaded documents
+│ │
 │ │ └── faiss_index/ # FAISS vector database
+│ │
 │ └── requirements.txt # Backend dependencies
 │
 ├── frontend/
+│ │
 │ └── streamlit_app.py # Streamlit frontend
+│ 
 │
 └── README.md
 
