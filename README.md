@@ -89,15 +89,6 @@ document-qa-rag/
 
 ---
 
-## Installation and Setup
-
-### 1. Clone the Repository
-
-```bash
-git clone <YOUR_REPO_URL>
-cd document-qa-rag/backend
-
-
 
 
 Why This Implementation?
